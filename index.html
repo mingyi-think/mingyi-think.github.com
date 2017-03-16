@@ -1,200 +1,435 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
-<!-- Head tag -->
+<html >
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <!--Description-->
-  
+    <!--[if lt IE 9]>
+        <style>body {display: none; background: none !important} </style>
+        <meta http-equiv="Refresh" Content="0; url=//outdatedbrowser.com/" />
+    <![endif]-->
 
-  <!--Author-->
-  
-  <meta name="author" content="John Doe">
-  
-
-  <!--Open Graph Title-->
-  
-      <meta property="og:title" content="Hexo"/>
-  
-  <!--Open Graph Description-->
-  
-  <!--Open Graph Site Name-->
-  <meta property="og:site_name" content="Hexo"/>
-  <!--Type page-->
-  
-      <meta property="og:type" content="website" />
-  
-  <!--Page Cover-->
-  
-
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <!-- Title -->
-  
-  <title>Hexo</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no" />
+<meta name="author" content="John Doe" />
 
 
-  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
+    
+    
 
-  <!-- Custom CSS/Sass -->
-  <link rel="stylesheet" href="/css/style.css">
 
-  <!----------------------------
-  https://github.com/GallenHu/hexo-theme-Daily
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
 
- _____            _   _
-|  __ \          (_) | |
-| |  | |   __ _   _  | |  _   _
-| |  | |  / _` | | | | | | | | |
-| |__| | | (_| | | | | | | |_| |
-|_____/   \__,_| |_| |_|  \__, |
-                          __/ |
-                         |___/
+<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
 
-    --------------------------->
+
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+
+
+
+    <link rel="shortcut icon" href="/favicon.png">
+
+
+
+    <link href="//cdn.bootcss.com/animate.css/3.5.1/animate.min.css" rel="stylesheet">
+
+
+
+    <link href="//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.css" rel="stylesheet">
+
+
+
+    <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+    <link href="//cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-minimal.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="/css/style.css">
+
+
+    <style> .article { opacity: 0;} </style>
+
+
+<link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+
+<title>Hexo</title>
+
+<script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
+
+<script>
+    var yiliaConfig = {
+        fancybox: true,
+        animate: true,
+        isHome: true,
+        isPost: false,
+        isArchive: false,
+        isTag: false,
+        isCategory: false,
+        fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
+        scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
+        search: undefined
+    }
+</script>
+
+
+    <script> yiliaConfig.jquery_ui = [false]; </script>
+
+
+
+    <script> yiliaConfig.rootUrl = "\/";</script>
+
+
+
+
+
 
 </head>
-
-
 <body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+    <header id="header" class="inner">
+        <a href="/" class="profilepic">
+            <img src="/img/avatar.png" class="animated zoomIn">
+        </a>
+        <hgroup>
+          <h1 class="header-author"><a href="/">John Doe</a></h1>
+        </hgroup>
 
-  <!-- Nav -->
-  <header class="site-header">
-  <div class="header-inside">
-    <div class="logo">
-      <a href="/" rel="home">
         
-        <img src="https://hexo.io/logo.svg" alt="Hexo" height="60">
+
         
-      </a>
+
+
+        
+            <div id="switch-btn" class="switch-btn">
+                <div class="icon">
+                    <div class="icon-ctn">
+                        <div class="icon-wrap icon-house" data-idx="0">
+                            <div class="birdhouse"></div>
+                            <div class="birdhouse_holes"></div>
+                        </div>
+                        <div class="icon-wrap icon-ribbon hide" data-idx="1">
+                            <div class="ribbon"></div>
+                        </div>
+                        
+                        <div class="icon-wrap icon-link hide" data-idx="2">
+                            <div class="loopback_l"></div>
+                            <div class="loopback_r"></div>
+                        </div>
+                        
+                        
+                        <div class="icon-wrap icon-me hide" data-idx="3">
+                            <div class="user"></div>
+                            <div class="shoulder"></div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="tips-box hide">
+                    <div class="tips-arrow"></div>
+                    <ul class="tips-inner">
+                        <li>菜单</li>
+                        <li>标签</li>
+                        
+                        <li>友情链接</li>
+                        
+                        
+                        <li>关于我</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+
+        <div id="switch-area" class="switch-area">
+            <div class="switch-wrap">
+                <section class="switch-part switch-part1">
+                    <nav class="header-menu">
+                        <ul>
+                        
+                            <li><a href="/">主页</a></li>
+                        
+                            <li><a href="/archives/">所有文章</a></li>
+                        
+                            <li><a href="/tags/">标签云</a></li>
+                        
+                            <li><a href="/about/">关于我</a></li>
+                        
+                        </ul>
+                    </nav>
+                    <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" href="mailto:123@123.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+                    </nav>
+                </section>
+                
+                
+                <section class="switch-part switch-part2">
+                    <div class="widget tagcloud" id="js-tagcloud">
+                        
+                    </div>
+                </section>
+                
+                
+                
+                <section class="switch-part switch-part3">
+                    <div id="js-friends">
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="https://pages.github.com/">GitHub</a>
+                    
+                      <a class="main-nav-link switch-friends-link" href="http://moxfive.xyz/">MOxFIVE</a>
+                    
+                    </div>
+                </section>
+                
+
+                
+                
+                <section class="switch-part switch-part4">
+                
+                    <div id="js-aboutme">专注于前端</div>
+                </section>
+                
+            </div>
+        </div>
+    </header>                
+</div>
     </div>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse">
-        <ul class="navbar-nav">
-          
-          
-            <li>
-              <a href="/.">
-                
-                  home
-                
-              </a>
-            </li>
-          
-            <li>
-              <a href="/archives">
-                
-                  archive
-                
-              </a>
-            </li>
-          
-        </ul>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+      <div class="overlay">
+          <div class="slider-trigger"></div>
+          <h1 class="header-author js-mobile-header hide"><a href="/" title="回到主页">John Doe</a></h1>
       </div>
-      <!-- /.navbar-collapse -->
-    </nav>
-    <div class="button-wrap">
-      <button class="menu-toggle">Primary Menu</button>
+    <div class="intrude-less">
+        <header id="header" class="inner">
+            <a href="/" class="profilepic">
+                <img src="/img/avatar.png" class="animated zoomIn">
+            </a>
+            <hgroup>
+              <h1 class="header-author"><a href="/" title="回到主页">John Doe</a></h1>
+            </hgroup>
+            
+            <nav class="header-menu">
+                <ul>
+                
+                    <li><a href="/">主页</a></li>
+                
+                    <li><a href="/archives/">所有文章</a></li>
+                
+                    <li><a href="/tags/">标签云</a></li>
+                
+                    <li><a href="/about/">关于我</a></li>
+                
+                <div class="clearfix"></div>
+                </ul>
+            </nav>
+            <nav class="header-nav">
+                        <ul class="social">
+                            
+                                <a class="fa Email" target="_blank" href="mailto:123@123.com" title="Email"></a>
+                            
+                                <a class="fa GitHub" target="_blank" href="#" title="GitHub"></a>
+                            
+                                <a class="fa RSS" target="_blank" href="/atom.xml" title="RSS"></a>
+                            
+                        </ul>
+            </nav>
+        </header>                
     </div>
-  </div>
-</header>
+    <link class="menu-list" tags="标签" friends="友情链接" about="关于我"/>
+</nav>
+      <div class="body-wrap">
+  
+    <article id="post-我为什么要维护这个博客" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/03/16/我为什么要维护这个博客/" class="article-date">
+      <time datetime="2017-03-16T12:48:54.000Z" itemprop="datePublished">2017-03-16</time>
+</a>
 
 
-  <!-- Main Content -->
-  <div class="site-content home">
-  <main class="content-area">
+    </div>
+  
+  <div class="article-inner">
     
-      
-        <div class="even">
-          <div class="container">
-  <article class="post">
+      <input type="hidden" class="isFancy" />
     
-    <h1 class="entry-title">
-      <a href="/2017/03/16/我为什么要维护这个博客/" rel="bookmark">
-        我为什么要维护这个博客  
-      </a>
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/16/我为什么要维护这个博客/">我为什么要维护这个博客</a>
     </h1>
-    
-    
-    <p class="posted-on">
-    2017-03-16
-    </p>
-    <div class="tags-links">
-      
-    </div>
-  </article>
-</div>
-        </div> 
+  
+
+      </header>
       
     
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>在上次和韬聊天之前，我还在犹豫要不要在生活中远离理性思维，希冀这样可以让自己的生活更有色彩一些。然而一个下午之后，我最终开始意识到自己的这种想法是多么愚蠢，问题的本质根本就不是自己太过于理性，恰恰相反，而是在于自己远不够理性。我至今不确定那个下午自己究竟听到了多少颠覆性的观点，但至少可以肯定地说，那个下午，自己开始重新认真地考虑成长这件事了。</p>
+<p>那一天，是我的生日。</p>
+<p>在我这个年纪，“上进心”这个词多见于女生的择偶条件中，然而，究竟啥是“上进心”，如何判断一个人有“上进心”却困惑了我好久。多年后我才发现，所谓有“上进心”，其实就是说这个人在一直<strong>成长</strong>。</p>
+<blockquote>
+<p><strong>而成长这件事，就像复利一样，只要假以时间，会呈现出指数曲线的增长趋势。</strong></p>
+</blockquote>
+<p>中学数学让我们知道，所谓复利效应，其实就是</p>
+<blockquote>
+<p>y = A * (1+x)^n</p>
+</blockquote>
+<p>其中A是本金，x是利率，n是年数。当A和x固定时，y是n的指数函数，会呈现出如题图所示的指数曲线。</p>
+<p>这样，随着时间的积累，你最终会获得远大于本金A的收益。同样的，个人的成长也呈现出类似的曲线，A是自己的起始知识和技能储备，x是自己相对上一周期的成长比例，n是时间，y是最终自己的知识和技能储备。</p>
+<p>这个公式看似有道理，但怎么理解呢？为什么x是自己的成长比例呢？如果每天在投入时间固定的情况下，成长的绝对值是固定的话，那么学龄前的孩子每天学到的新知识可能只是一个汉字，同样时间投入下，一个成人每天可量化的进步值也应该是一个汉字才对。然而，我们知道，长大后的自己，每天学到的知识可能是半本书的英语语法，甚至一本书的知识点。</p>
+<p>这种不同时期学习新知识速度有差别的原因是什么呢？是已经积累的知识。每当我们新学一个知识的时候，已经很熟悉的那些概念，就会蹦出来帮助理解、融会贯通新的知识，从而加速对新知识的吸收。从这个角度上来说，也正是得益于这些老知识的帮助，我们在学习新知识时，单位时间里才能保持一个固定的成长速度x。因此，人和人学习速度的差别，本质上就是基础A的差别。</p>
+<p>看到这里，我们应该很开心地发现，原来所谓的成长，本质上就是<strong>积累</strong>呀，而且在这种积累效应的帮助下，我们最终会像复利一样，经过某个点后，以之前的自己难以想象的绝对速度成长。这是多么开心的一个结论，至少这个结论告诉了我们两件事：</p>
+<blockquote>
+<ol>
+<li>只要自己在不断成长，哪怕每天只有一点点的进步，但坚持下去，终究会有一天，自己的知识和能力储备达能到自己难以想象的高度。</li>
+<li>成长这件事情，真的很简单，只需要每天都去积累一点点就行了。</li>
+</ol>
+</blockquote>
+<p>在明白了成长是什么样一回事之后，我们往往迫不及待地又要跳入另一个坑，就是所谓的“技能/知识收集癖”，总是怕自己学的东西还不够多，在自己能看到自己大的进步前，恨不得把一天当10天用。我们希望提高自己在一天时间里进步的比例x，以期让自己能看到明显的进步。但有一个问题，x是正比于时间的，一天只有24个小时，除掉必需的花费，也就那么多，当我们想提高x时，怎么办呢？唯一的办法就是从休息时间里挤时间了，如果极度压缩一个人的休息时间，那么最终的结果也就显而易见了，要么因过度疲惫而放弃，要么放弃成长的质量而专注于表面的数量，这些都有些本末倒置了，而这正是一个刚打好鸡血的人最快的放血手段。</p>
+<blockquote>
+<p>成长一场马拉松，我们不能用百米冲刺的心态，只追逐眼前短暂的速度带来的成就感，而忽视长远的目标。</p>
+</blockquote>
+<p>许三多说，“人生要做很多很多有意义的事”。我一直在想，我人生中有哪些有意义的事情呢？当过助残志愿者、体验过基层工作、进过原始森林探险、骑行过青海湖，过去十年中，自己做过很多不同的事情，但都没有给我太多意义感。后来才明白，也许真正有意义的事情是自己的成长吧，成长这件小事，需要更多耐心，也带给自己更多挑战，虽波澜不惊，但却自有其独到的韵味。</p>
+<p>如果在自己成长的过程中，恰巧认识了一两个战友，抑或是帮助了三五个好友，都是善莫大焉的事情了吧，这是成长带来的惊喜，也赋予成长本身更大的意义。</p>
+<p>想通后才发现，当男生们还在普遍通过股票的当前价来择偶时，有智慧的女生已经会通过股票的走势来做投资决策了，这种智慧一次次让我感到折服。</p>
+<p>所以这个公众号的目的也就明确了，主要是记录自己在成长这一场马拉松中的所想所悟。既然成长这件事情急不得，那我索性就慢慢来写好啦。若干年后，当自己回顾这一篇篇成长的感悟时，可以真真切切地感受到自己的成长，无论是写作技巧，还是大脑的升级。最终，这些文字在自己看来都会变成幼稚的东西，但这毕竟是自己的成长，毕竟是我的一辈子。</p>
 
+      
+    </div>
     
+    <div class="article-info article-info-index">
+      
+      
 
-  </main>
-</div>
-
-  <!-- Footer -->
-  <!-- Footer-widgets -->
-<div class="footer-widgets">
-  <div class="row inside-wrapper">
-    <div class="col-1-3">
-      <aside>
-        <h1 class="widget-title">关于本站</h1>
-        <div class="custom-widget-content">
-          
-          <ul><li><a href="https://github.com/GallenHu/hexo-theme-Daily">如何自定义这里的内容(配置教程)?</a></li></ul>
-        </div>
-      </aside>
+      
+      
+      <div class="clearfix"></div>
     </div>
-    <div class="col-1-3">
-      <aside>
-        <h1 class="widget-title">Contact</h1>
-        <div class="widget-text">
-          
-            
-              <a href="https://github.com/GallenHu" class="icon icon-github" target="_blank">github</a>
-            
-          
-        </div>
-      </aside>
-    </div>
-    <div class="col-1-3">
-      <aside>
-        <h1 class="widget-title">Search</h1>
-        <div class="widget-text">
-          <form onSubmit="return appDaily.submitSearch('')">
-            <p>
-              <input type="text" placeholder="search..." id="homeSearchInput">
-            </p>
-            <!-- <input type="submit" value="GO"> -->
-          </form>
-        </div>
-      </aside>
-    </div>
+    
   </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+  
 </div>
-<!-- Footer -->
-<footer class="site-info">
-  <p>
-    <span>Hexo &copy; 2017</span>
-    
-      <span class="split">|</span>
-      <span>Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> with Theme <a href="https://github.com/GallenHu/hexo-theme-Daily" target="_blank">Daily</a></span>
-    
-  </p>
+      <footer id="footer">
+    <div class="outer">
+        <div id="footer-info">
+            <div class="footer-left">
+                <i class="fa fa-copyright"></i> 
+                2016-2017 John Doe
+            </div>
+            <div class="footer-right">
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
+            </div>
+        </div>
+        
+            <div class="visit">
+                
+                    <span id="busuanzi_container_site_pv" style='display:none'>
+                        <span id="site-visit" title="本站到访数"><i class="fa fa-user" aria-hidden="true"></i><span id="busuanzi_value_site_uv"></span>
+                        </span>
+                    </span>
+                
+                
+                    <span>| </span>
+                
+                
+                    <span id="busuanzi_container_page_pv" style='display:none'>
+                        <span id="page-visit"  title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
+                
+            </div>
+        
+    </div>
 </footer>
+    </div>
+    
+<script data-main="/js/main.js" src="//cdn.bootcss.com/require.js/2.2.0/require.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            var iPad = window.navigator.userAgent.indexOf('iPad');
+            if (iPad > -1 || $(".left-col").css("display") === "none") {
+                var bgColorList = ["#9db3f4", "#414141", "#e5a859", "#f5dfc6", "#c084a0", "#847e72", "#cd8390", "#996731"];
+                var bgColor = Math.ceil(Math.random() * (bgColorList.length - 1));
+                $("body").css({"background-color": bgColorList[bgColor], "background-size": "cover"});
+            }
+            else {
+                var backgroundnum = 5;
+                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
+            }
+        })
+    </script>
 
 
-  <!-- After footer scripts -->
-  <!-- scripts -->
-<script src="/js/app.js"></script>
 
 
 
+<div class="scroll" id="scroll">
+    <a href="#" title="返回顶部"><i class="fa fa-arrow-up"></i></a>
+    <a href="#comments" onclick="load$hide();" title="查看评论"><i class="fa fa-comments-o"></i></a>
+    <a href="#footer" title="转到底部"><i class="fa fa-arrow-down"></i></a>
+</div>
+<script>
+    // Open in New Window
+    
+        var oOpenInNew = {
+            
+            
+            
+            
+            
+            
+             archives: ".archive-article-title", 
+             miniArchives: "a.post-list-link", 
+            
+             friends: "#js-friends a", 
+             socail: ".social a" 
+        }
+        for (var x in oOpenInNew) {
+            $(oOpenInNew[x]).attr("target", "_blank");
+        }
+    
+</script>
+
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
+</script>
+  </div>
 </body>
-
 </html>
